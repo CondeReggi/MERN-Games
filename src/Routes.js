@@ -1,15 +1,23 @@
 import React from 'react';
-import Home from './core/Home';
-import { BrowserRoute , Switch , Route } from 'react-router-dom'
+import { BrowserRouter as Router , Routes, Route } from 'react-router-dom';
 
-const Routes = () => {
-    return(
-        <BrowserRoute>
-            <Switch>
-                <Route path="/" exact component= {Home} />
-            </Switch>
-        </BrowserRoute>
+// View Components
+import Home from './core/Home';
+import Search from './core/Search';
+
+// Functional Components
+
+const RoutesLink = () => {
+    return (
+        <div className='ContenedorRoutes'>
+            <Router>
+                <Routes>
+                    <Route path="/" exact element = {<Home />} />
+                </Routes>
+            </Router>
+        </div>
+
     )
 }
 
-export default Routes;
+export default RoutesLink;

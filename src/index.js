@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import RoutesLink from './Routes';
 
 ReactDOM.render(
-    <App />,
+    <RoutesLink />,
   document.getElementById('root')
 );
 
