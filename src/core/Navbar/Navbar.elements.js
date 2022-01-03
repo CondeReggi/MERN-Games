@@ -7,4 +7,5 @@ export const NavbarComponent = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-around;
+    color: #ffff;
 `;
